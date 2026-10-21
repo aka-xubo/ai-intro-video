@@ -1,0 +1,25 @@
+export const theme = {
+  colors: {
+    paper: '#F3EDDC',
+    paperLight: '#FFFDF8',
+    ink: '#1D252C',
+    muted: '#756F66',
+    line: '#C9C1B2',
+    coral: '#D85B3F',
+    ontology: '#397A64',
+    ontologySoft: '#E3EEE8',
+    verify: '#486A92',
+    verifySoft: '#E4EBF2',
+    tdd: '#765B8F',
+    tddSoft: '#ECE6F0',
+    dark: '#111722',
+    brandGreen: '#66BB6A',
+    brandYellow: '#FBBF24',
+    white: '#FFFFFF',
+  },
+  font: {
+    display: 'Songti SC, STSong, SimSun, serif',
+    sans: 'PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif',
+    mono: 'SFMono-Regular, Menlo, Consolas, monospace',
+  },
+} as const;
