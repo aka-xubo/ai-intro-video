@@ -12,7 +12,7 @@
 
 ## 使用方式
 
-将本仓库作为 Codex Skill 使用，确保技能目录根部包含 `SKILL.md`。触发请求可以是：
+将 `skills/ai-intro-video/` 作为 Codex Skill 目录使用，其中包含技能入口 `SKILL.md`。触发请求可以是：
 
 - “把这篇文章做成一个短视频”
 - “帮我写一个 AI 工具介绍视频的口播稿和分镜”
@@ -48,17 +48,22 @@
 
 ```text
 .
-├── SKILL.md                         # Skill 主说明和工作流
-├── components/                      # 可复用的 Remotion 组件
-├── references/                      # 内容、视觉、字幕和验证规范
-└── scripts/                         # 配音、字幕和时长检查脚本
+├── README.md
+└── skills/
+    └── ai-intro-video/
+        ├── SKILL.md                 # Skill 主说明和工作流
+        ├── components/              # 可复用的 Remotion 组件
+        ├── references/              # 内容、视觉、字幕和验证规范
+        └── scripts/                 # 配音、字幕和时长检查脚本
 ```
 
 ## 辅助脚本
 
-脚本位于 `scripts/`，常用命令如下：
+脚本位于 `skills/ai-intro-video/scripts/`，常用命令如下：
 
 ```bash
+cd skills/ai-intro-video
+
 # 生成配音和 VTT 字幕
 ./scripts/generate-voiceovers.sh zh-CN-YunxiNeural public/audio
 
